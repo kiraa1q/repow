@@ -1,0 +1,143 @@
+# ──────────────────────────────────────────────────────────────────
+# Repow! — links.yaml
+#
+# This is the single source of truth for all links.
+# To contribute: fork the repo, add your link, open a PR.
+#
+# STRUCTURE:
+#   categories:
+#     - name: "Category Name"   # shown as a section heading
+#       icon: "🛠️"              # emoji next to the heading
+#       links:
+#         - title: "Tool Name"
+#           url: "https://example.com"
+#           description: "One-liner about what it does."
+#           tags: [tag1, tag2]    # lowercase, searchable, clickable
+#           badges: [free, tool]  # see badge options below
+#
+# BADGE OPTIONS:
+#   community   — maintained by the community
+#   opensource  — source code is public
+#   official    — made by the official org/team
+#   free        — free to use
+#   paid        — requires payment
+#   tool        — it's a tool/app (not just a resource)
+# ──────────────────────────────────────────────────────────────────
+
+categories:
+  - name: "Developer Tools"
+    icon: "🛠️"
+    links:
+      - title: "Warp"
+        url: "https://warp.dev"
+        description: "The terminal reimagined with AI-powered command search and team collaboration."
+        tags: [terminal, ai, productivity]
+        badges: [tool, free]
+
+      - title: "Fig"
+        url: "https://fig.io"
+        description: "Adds autocomplete to any terminal. Works with bash, zsh, fish."
+        tags: [terminal, autocomplete, cli]
+        badges: [tool, opensource]
+
+      - title: "DevDocs"
+        url: "https://devdocs.io"
+        description: "Fast, offline documentation browser for 100+ APIs in one searchable interface."
+        tags: [docs, reference, offline]
+        badges: [free, opensource]
+
+      - title: "Hoppscotch"
+        url: "https://hoppscotch.io"
+        description: "Open-source API development ecosystem. The lightweight Postman alternative."
+        tags: [api, rest, graphql, testing]
+        badges: [opensource, free]
+
+  - name: "Learning & Reference"
+    icon: "📚"
+    links:
+      - title: "Roadmap.sh"
+        url: "https://roadmap.sh"
+        description: "Community-maintained learning roadmaps for developers. Pick a track and go."
+        tags: [learning, career, roadmap]
+        badges: [community, opensource, free]
+
+      - title: "The Missing Semester"
+        url: "https://missing.csail.mit.edu"
+        description: "MIT course on shell, git, vim and the tools CS degrees forget to teach."
+        tags: [shell, git, vim, learning]
+        badges: [free, official]
+
+      - title: "Excalidraw"
+        url: "https://excalidraw.com"
+        description: "Virtual whiteboard for sketching hand-drawn diagrams. Ideal for system design."
+        tags: [diagrams, design, whiteboard]
+        badges: [opensource, free]
+
+      - title: "tldr-pages"
+        url: "https://tldr.sh"
+        description: "Simplified man pages with practical examples. Community-maintained."
+        tags: [cli, docs, reference]
+        badges: [community, opensource, free]
+
+  - name: "AI & Machine Learning"
+    icon: "🤖"
+    links:
+      - title: "Hugging Face"
+        url: "https://huggingface.co"
+        description: "The GitHub of machine learning — models, datasets, demos, all in one place."
+        tags: [ai, ml, models, datasets]
+        badges: [community, opensource]
+
+      - title: "LangChain"
+        url: "https://python.langchain.com"
+        description: "Build LLM-powered applications. Best starting point for chains and agents."
+        tags: [llm, agents, python]
+        badges: [opensource, official]
+
+      - title: "Ollama"
+        url: "https://ollama.ai"
+        description: "Run large language models locally. llama3, mistral, codellama in one command."
+        tags: [llm, local, cli]
+        badges: [tool, opensource, free]
+
+  - name: "Design & UI"
+    icon: "🎨"
+    links:
+      - title: "Radix UI"
+        url: "https://radix-ui.com"
+        description: "Unstyled, accessible components for React. The primitive layer you actually want."
+        tags: [react, components, accessibility]
+        badges: [opensource, free]
+
+      - title: "Coolors"
+        url: "https://coolors.co"
+        description: "The fastest color palette generator on the web. Press space, get palettes."
+        tags: [color, palette, design]
+        badges: [tool, free]
+
+      - title: "Iconify"
+        url: "https://iconify.design"
+        description: "150,000+ icons from 150+ icon sets, unified under one API."
+        tags: [icons, design, ui]
+        badges: [opensource, free]
+
+  - name: "Productivity"
+    icon: "⚡"
+    links:
+      - title: "Raycast"
+        url: "https://raycast.com"
+        description: "Blazingly fast macOS launcher. Replace Spotlight. Seriously."
+        tags: [macos, launcher, productivity]
+        badges: [tool, free]
+
+      - title: "Obsidian"
+        url: "https://obsidian.md"
+        description: "A second brain, for you. Markdown-based, local-first knowledge base."
+        tags: [notes, knowledge, markdown]
+        badges: [tool, free]
+
+      - title: "Linear"
+        url: "https://linear.app"
+        description: "The issue tracker that engineers actually enjoy. Fast, keyboard-first."
+        tags: [issues, project, team]
+        badges: [tool, paid]
