@@ -1,4 +1,8 @@
-# Repow! ⚡
+# Repow!
+
+<p align="center">
+  <img src="spider.png" height="80px" alt="Repow!">
+</p>
 
 > Awesome links, supercharged. A community-driven link repository — curated, tagged, and actually searchable.
 
