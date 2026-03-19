@@ -23,6 +23,17 @@ fetch('links.yaml')
     render();
     document.getElementById('yaml-viewer-content').textContent = text.trim();
     document.getElementById('content').querySelector('.loading')?.remove();
+
+    // ── SIDEBAR COLLAPSIBLE TOGGLES ──
+    document.querySelectorAll('.sb-toggle').forEach(toggle => {
+      toggle.addEventListener('click', () => {
+        const target = document.getElementById(toggle.dataset.target);
+        const arrow = toggle.querySelector('.sb-arrow');
+        if (!target) return;
+        const collapsed = target.classList.toggle('collapsed');
+        arrow.classList.toggle('collapsed', collapsed);
+      });
+    });
   })
   .catch(err => {
     document.getElementById('content').innerHTML =
@@ -64,8 +75,8 @@ function slugify(s) {
 }
 
 let activeBadge = 'all';
-const BADGE_LIST = ['community', 'opensource', 'official', 'free', 'paid', 'tool'];
-const BADGE_DISPLAY = { community:'community', opensource:'open-source', official:'official', free:'free', paid:'paid', tool:'tool' };
+const BADGE_LIST = ['community', 'opensource', 'verified', 'free', 'paid', 'tool'];
+const BADGE_DISPLAY = { community:'community', opensource:'open-source', verified:'verified', free:'free', paid:'paid', tool:'tool' };
 
 function buildSidebar(items) {
   // Tags
@@ -127,7 +138,7 @@ function favicon(url) {
 const BADGE_LABELS = {
   community: 'community',
   opensource: 'open-source',
-  official: 'official',
+  verified: 'verified',
   free: 'free',
   paid: 'paid',
   tool: 'tool'
@@ -315,16 +326,5 @@ document.getElementById('yaml-copy-all').addEventListener('click', () => {
     const btn = document.getElementById('yaml-copy-all');
     btn.textContent = '✓ copied!';
     setTimeout(() => btn.textContent = 'copy all', 2000);
-  });
-});
-
-// ── SIDEBAR COLLAPSIBLE TOGGLES ──
-document.querySelectorAll('.sb-toggle').forEach(toggle => {
-  toggle.addEventListener('click', () => {
-    const target = document.getElementById(toggle.dataset.target);
-    const arrow = toggle.querySelector('.sb-arrow');
-    if (!target) return;
-    const collapsed = target.classList.toggle('collapsed');
-    arrow.classList.toggle('collapsed', collapsed);
   });
 });
