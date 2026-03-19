@@ -39,16 +39,16 @@
   <!-- SIDEBAR -->
   <aside class="sidebar">
     <div class="sb-section">
-      <div class="sb-label">Filter by tag</div>
-      <div id="tag-nav"></div>
+      <div class="sb-label sb-toggle" data-target="tag-nav">Filter by tag <span class="sb-arrow">▾</span></div>
+      <div id="tag-nav" class="sb-collapsible"></div>
     </div>
     <div class="sb-section">
-      <div class="sb-label">Filter by badge</div>
-      <div id="badge-nav"></div>
+      <div class="sb-label sb-toggle" data-target="badge-nav">Filter by badge <span class="sb-arrow">▾</span></div>
+      <div id="badge-nav" class="sb-collapsible"></div>
     </div>
     <div class="sb-section">
-      <div class="sb-label">Shortcuts</div>
-      <div class="kb-hints">
+      <div class="sb-label sb-toggle" data-target="sb-shortcuts">Shortcuts <span class="sb-arrow">▾</span></div>
+      <div id="sb-shortcuts" class="sb-collapsible kb-hints">
         <kbd>/</kbd> search<br>
         <kbd>Esc</kbd> clear<br>
         <kbd>+</kbd> add link
