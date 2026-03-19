@@ -317,3 +317,14 @@ document.getElementById('yaml-copy-all').addEventListener('click', () => {
     setTimeout(() => btn.textContent = 'copy all', 2000);
   });
 });
+
+// ── SIDEBAR COLLAPSIBLE TOGGLES ──
+document.querySelectorAll('.sb-toggle').forEach(toggle => {
+  toggle.addEventListener('click', () => {
+    const target = document.getElementById(toggle.dataset.target);
+    const arrow = toggle.querySelector('.sb-arrow');
+    if (!target) return;
+    const collapsed = target.classList.toggle('collapsed');
+    arrow.classList.toggle('collapsed', collapsed);
+  });
+});
