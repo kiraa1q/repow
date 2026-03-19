@@ -63,7 +63,12 @@ function slugify(s) {
   return s.toLowerCase().replace(/[^a-z0-9]+/g, '-');
 }
 
+let activeBadge = 'all';
+const BADGE_LIST = ['community', 'opensource', 'official', 'free', 'paid', 'tool'];
+const BADGE_DISPLAY = { community:'community', opensource:'open-source', official:'official', free:'free', paid:'paid', tool:'tool' };
+
 function buildSidebar(items) {
+  // Tags
   const tags = ['all', ...new Set(items.flatMap(i => i.tags || []).sort())];
   const tn = document.getElementById('tag-nav');
   tn.innerHTML = '';
@@ -74,23 +79,34 @@ function buildSidebar(items) {
     b.textContent = t === 'all' ? 'All tags' : '#' + t;
     b.addEventListener('click', () => {
       activeTag = t;
-      document.querySelectorAll('.tag-btn').forEach(x => x.classList.toggle('active', x.dataset.tag === t));
+      document.querySelectorAll('[data-tag]').forEach(x => x.classList.toggle('active', x.dataset.tag === t));
       render();
     });
     tn.appendChild(b);
   });
 
-  const cn = document.getElementById('cat-nav');
-  cn.innerHTML = '';
-  data.categories.forEach(cat => {
+  // Badges
+  const bn = document.getElementById('badge-nav');
+  bn.innerHTML = '';
+  ['all', ...BADGE_LIST].forEach(badge => {
+    const count = badge === 'all' ? items.length : items.filter(i => (i.badges || []).includes(badge)).length;
+    if (badge !== 'all' && !count) return;
     const b = document.createElement('button');
-    b.className = 'cat-btn';
-    b.innerHTML = `<span class="cni">${cat.icon || '📁'}</span><span>${cat.name}</span><span class="cnc">${(cat.links || []).length}</span>`;
+    b.className = 'tag-btn' + (badge === activeBadge ? ' active' : '');
+    b.dataset.badgeFilter = badge;
+    if (badge === 'all') {
+      b.textContent = 'All badges';
+    } else {
+      b.innerHTML = `<span class="badge badge-${badge}" style="pointer-events:none">${BADGE_DISPLAY[badge]}</span><span style="margin-left:auto;font-family:'Geist Mono',monospace;font-size:10px;opacity:0.4">${count}</span>`;
+      b.style.display = 'flex';
+      b.style.alignItems = 'center';
+    }
     b.addEventListener('click', () => {
-      const el = document.getElementById('cat-' + slugify(cat.name));
-      if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      activeBadge = badge;
+      document.querySelectorAll('[data-badge-filter]').forEach(x => x.classList.toggle('active', x.dataset.badgeFilter === badge));
+      render();
     });
-    cn.appendChild(b);
+    bn.appendChild(b);
   });
 }
 
@@ -172,6 +188,7 @@ function render() {
       badges: r.badges, _cat: r._cat, _icon: r._icon, url: r.url
     }));
     if (activeTag !== 'all') results = results.filter(l => (l.tags || []).includes(activeTag));
+    if (activeBadge !== 'all') results = results.filter(l => (l.badges || []).includes(activeBadge));
     bar.innerHTML = results.length
       ? `<strong>${results.length}</strong> result${results.length !== 1 ? 's' : ''} for "<strong>${q}</strong>"`
       : '';
@@ -191,6 +208,7 @@ function render() {
     content.innerHTML = data.categories.map(cat => {
       let links = cat.links || [];
       if (activeTag !== 'all') links = links.filter(l => (l.tags || []).includes(activeTag));
+      if (activeBadge !== 'all') links = links.filter(l => (l.badges || []).includes(activeBadge));
       return links.length ? sectionHTML(cat.name, cat.icon, links) : '';
     }).join('');
   }
@@ -212,6 +230,10 @@ document.addEventListener('keydown', e => {
     if (yamlOpen) { document.getElementById('yaml-modal').classList.remove('open'); return; }
     document.getElementById('search').value = '';
     searchQ = '';
+    activeTag = 'all';
+    activeBadge = 'all';
+    document.querySelectorAll('[data-tag]').forEach(x => x.classList.toggle('active', x.dataset.tag === 'all'));
+    document.querySelectorAll('[data-badge-filter]').forEach(x => x.classList.toggle('active', x.dataset.badgeFilter === 'all'));
     render();
     document.getElementById('search').blur();
   }
