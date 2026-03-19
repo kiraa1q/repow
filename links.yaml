@@ -18,7 +18,7 @@
 # BADGE OPTIONS:
 #   community   — maintained by the community
 #   opensource  — source code is public
-#   official    — made by the official org/team
+#   verified    — made by the verified org/team
 #   free        — free to use
 #   paid        — requires payment
 #   tool        — it's a tool/app (not just a resource)
@@ -65,7 +65,7 @@ categories:
         url: "https://missing.csail.mit.edu"
         description: "MIT course on shell, git, vim and the tools CS degrees forget to teach."
         tags: [shell, git, vim, learning]
-        badges: [free, official]
+        badges: [free, verified]
 
       - title: "Excalidraw"
         url: "https://excalidraw.com"
@@ -92,7 +92,7 @@ categories:
         url: "https://python.langchain.com"
         description: "Build LLM-powered applications. Best starting point for chains and agents."
         tags: [llm, agents, python]
-        badges: [opensource, official]
+        badges: [opensource, verified]
 
       - title: "Ollama"
         url: "https://ollama.ai"
