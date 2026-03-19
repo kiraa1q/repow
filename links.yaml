@@ -7,10 +7,16 @@ categories:
   - name: "Links"
     icon: "🔗"
     links:
+      - title: "Steam"
+        url: "https://steamcommunity.com/"
+        description: "The largest PC gaming platform. Games, community, workshop."
+        tags: [gaming, platform]
+        badges: [tool, free]
+
       - title: "SteamDB"
         url: "https://steamdb.info/"
         description: "Database of everything on Steam. Prices, history, stats."
-        tags: [steam, gaming, tools]
+        tags: [gaming, tools, steam]
         badges: [free, tool]
 
       - title: "Modrinth"
@@ -19,11 +25,41 @@ categories:
         tags: [minecraft, mods, gaming]
         badges: [opensource, free]
 
-      - title: "Selfh.st Apps"
-        url: "https://selfh.st/apps/"
-        description: "Curated directory of self-hostable applications."
-        tags: [selfhosted, homelab, tools]
-        badges: [community, free]
+      - title: "Reddit"
+        url: "https://www.reddit.com/"
+        description: "The front page of the internet."
+        tags: [community, social]
+        badges: [free]
+
+      - title: "Discord"
+        url: "https://discord.com/"
+        description: "Voice, video and text communication platform for communities."
+        tags: [community, social, communication]
+        badges: [tool, free]
+
+      - title: "YouTube"
+        url: "https://www.youtube.com/"
+        description: "The world's largest video platform."
+        tags: [video, media, social]
+        badges: [free]
+
+      - title: "SoundCloud"
+        url: "https://soundcloud.com/"
+        description: "Music streaming and audio distribution platform."
+        tags: [music, media, streaming]
+        badges: [free]
+
+      - title: "GitHub"
+        url: "https://github.com/"
+        description: "Where the world builds software. Largest code hosting platform."
+        tags: [git, development, community]
+        badges: [tool, free]
+
+      - title: "DuckDuckGo"
+        url: "https://duckduckgo.com/"
+        description: "Privacy-focused search engine. No tracking, no filter bubbles."
+        tags: [privacy, search, tools]
+        badges: [tool, free]
 
       - title: "Gemini"
         url: "https://gemini.google.com/"
@@ -37,44 +73,50 @@ categories:
         tags: [ai, tools]
         badges: [tool, free]
 
-      - title: "DuckDuckGo"
-        url: "https://duckduckgo.com/"
-        description: "Privacy-focused search engine. No tracking, no filter bubbles."
-        tags: [privacy, search, tools]
-        badges: [tool, free]
-
       - title: "Njalla"
         url: "https://njal.la/"
         description: "Privacy-focused domain registration service."
         tags: [privacy, domains, tools]
         badges: [tool, paid]
 
+      - title: "Selfh.st Apps"
+        url: "https://selfh.st/apps/"
+        description: "Curated directory of self-hostable applications."
+        tags: [selfhosted, homelab, tools]
+        badges: [community, free]
+
+      - title: "Ubuntu"
+        url: "https://www.ubuntu.com/"
+        description: "The most popular Linux distribution for desktops and servers."
+        tags: [linux, os, ubuntu]
+        badges: [opensource, free]
+
+      - title: "Ubuntu Wiki"
+        url: "https://wiki.ubuntu.com/"
+        description: "Community-edited documentation and guides for Ubuntu."
+        tags: [linux, ubuntu, docs]
+        badges: [community, free]
+
+      - title: "Debian"
+        url: "https://www.debian.org/"
+        description: "The universal operating system. Rock-solid Linux distro Ubuntu is based on."
+        tags: [linux, os, debian]
+        badges: [opensource, free]
+
       - title: "Vaultwarden"
         url: "https://github.com/dani-garcia/vaultwarden"
         description: "Unofficial Bitwarden compatible server written in Rust. Self-host your passwords."
-        tags: [selfhosted, security, passwords, rust]
+        tags: [selfhosted, security, passwords, github]
         badges: [opensource, free]
 
       - title: "ESP32Marauder"
         url: "https://github.com/justcallmekoko/ESP32Marauder"
         description: "Suite of WiFi/Bluetooth offensive and defensive tools for the ESP32."
-        tags: [esp32, security, hacking, hardware]
-        badges: [opensource, free]
-
-      - title: "Polaris"
-        url: "https://github.com/agersant/polaris"
-        description: "Self-hosted music streaming server."
-        tags: [selfhosted, music, streaming]
+        tags: [esp32, security, hardware, github]
         badges: [opensource, free]
 
       - title: "mini-rack"
         url: "https://github.com/geerlingguy/mini-rack"
         description: "Community builds and ideas for mini rack setups."
-        tags: [homelab, hardware, community]
+        tags: [homelab, hardware, community, github]
         badges: [community, opensource]
-
-      - title: "Reddit"
-        url: "https://www.reddit.com/"
-        description: "The front page of the internet."
-        tags: [community, social]
-        badges: [free]
