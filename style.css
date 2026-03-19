@@ -30,16 +30,11 @@ a{text-decoration:none;color:inherit}
 .brand-logo{
   width:32px;height:32px;
   flex-shrink:0;
-  /* invert black→white, then tint to accent blue */
-  filter: invert(1) sepia(1) saturate(3) hue-rotate(185deg) brightness(1.1)
-          drop-shadow(0 0 6px rgba(136,204,255,0.4));
-  transition:filter .2s, transform .2s;
+  transition:transform .2s;
   cursor:default;
 }
 .brand-logo:hover{
-  filter: invert(1) sepia(1) saturate(3) hue-rotate(185deg) brightness(1.3)
-          drop-shadow(0 0 12px rgba(136,204,255,0.75));
-  transform:scale(1.1);
+  transform:scale(1.08);
 }
 .divider{width:1px;height:18px;background:var(--border);flex-shrink:0}
 .search-wrap{flex:1;max-width:480px;position:relative}
