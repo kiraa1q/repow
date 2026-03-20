@@ -72,18 +72,31 @@ a{text-decoration:none;color:inherit}
 .sidebar{
   width:200px;flex-shrink:0;
   position:sticky;top:54px;height:calc(100vh - 54px);
-  overflow-y:auto;
+  display:flex;flex-direction:column;
   border-right:1px solid rgba(255,255,255,0.05);
-  padding:18px 0;
   background:#212121;
+  overflow:hidden;
 }
 /* hide ALL scrollbars globally */
 *::-webkit-scrollbar{display:none}
 *{-ms-overflow-style:none;scrollbar-width:none}
 
+/* sticky section headers */
+.sb-section{
+  display:flex;flex-direction:column;
+  flex-shrink:0;
+  border-bottom:1px solid rgba(255,255,255,0.04);
+}
+/* the last section (shortcuts) + footer don't need a border */
+.sb-section:last-of-type{border-bottom:none}
+
 .sb-label{
   font-size:9.5px;text-transform:uppercase;letter-spacing:1.2px;
-  color:var(--muted);padding:0 16px;margin-bottom:6px;
+  color:var(--muted);padding:10px 16px 6px;
+  flex-shrink:0;
+  /* always visible — not scrollable */
+  position:relative;z-index:1;
+  background:#212121;
 }
 .sb-toggle{
   display:flex;align-items:center;justify-content:space-between;
@@ -98,17 +111,24 @@ a{text-decoration:none;color:inherit}
   display:inline-block;
 }
 .sb-arrow.collapsed{transform:rotate(-90deg)}
+
+/* scrollable content inside each section */
 .sb-collapsible{
-  overflow:hidden;
+  overflow-y:auto;
+  overflow-x:hidden;
   transition:max-height .25s ease, opacity .2s ease;
-  max-height:600px;
+  max-height:180px;
   opacity:1;
+  padding-bottom:6px;
 }
 .sb-collapsible.collapsed{
-  max-height:0;
+  max-height:0 !important;
   opacity:0;
+  padding-bottom:0;
 }
-.sb-section{margin-bottom:22px}
+
+/* shortcuts section doesn't need to scroll */
+#sb-shortcuts{max-height:none;overflow:hidden}
 .tag-btn{
   display:block;width:100%;text-align:left;
   background:none;border:none;
@@ -219,12 +239,12 @@ kbd{
   padding:1px 6px;font-size:9.5px;font-weight:600;
   text-transform:uppercase;letter-spacing:0.3px;white-space:nowrap;
 }
-.badge-community{background:rgba(255,255,255,0.07);color:rgba(255,255,255,0.65);border:1px solid rgba(255,255,255,0.13)}
-.badge-opensource{background:rgba(255,255,255,0.07);color:rgba(255,255,255,0.65);border:1px solid rgba(255,255,255,0.13)}
-.badge-verified{background:rgba(255,255,255,0.11);color:#fff;border:1px solid rgba(255,255,255,0.2)}
-.badge-free{background:rgba(255,255,255,0.05);color:rgba(255,255,255,0.5);border:1px solid rgba(255,255,255,0.09)}
-.badge-paid{background:rgba(255,255,255,0.05);color:rgba(255,255,255,0.5);border:1px solid rgba(255,255,255,0.09)}
-.badge-tool{background:rgba(255,255,255,0.05);color:rgba(255,255,255,0.5);border:1px solid rgba(255,255,255,0.09)}
+/* badge colors: subtle but distinct */
+.badge-community  {background:rgba(139,92,246,0.15);color:#a78bfa;border:1px solid rgba(139,92,246,0.3)}
+.badge-opensource {background:rgba(74,222,128,0.12);color:#4ade80;border:1px solid rgba(74,222,128,0.25)}
+.badge-software   {background:rgba(56,189,248,0.12);color:#38bdf8;border:1px solid rgba(56,189,248,0.25)}
+.badge-docs       {background:rgba(251,191,36,0.12);color:#fbbf24;border:1px solid rgba(251,191,36,0.25)}
+.badge-resource   {background:rgba(251,146,60,0.12);color:#fb923c;border:1px solid rgba(251,146,60,0.25)}
 
 /* TAG CHIPS */
 .tag-chip{
@@ -317,8 +337,11 @@ kbd{
 
 /* FOOTER */
 .footer{
-  padding:0 16px 16px;margin-top:auto;
+  margin-top:auto;
+  padding:12px 16px;
+  border-top:1px solid rgba(255,255,255,0.04);
   font-size:11px;color:var(--muted);line-height:1.8;
+  flex-shrink:0;
 }
 .footer a{color:var(--muted2)}
 .footer a:hover{color:var(--fg)}
