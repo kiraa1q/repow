@@ -12,127 +12,121 @@ categories:
         url: "https://excalidraw.com"
         description: "Virtual whiteboard for sketching hand-drawn diagrams."
         tags: [design, diagrams, whiteboard]
-        badges: [opensource, free]
-
-        title: "Lichess"
-        url: "https://lichess.org/analysis#0"
-        description: "Chess Web-engine"
-        tags: [chess]
-        badges: [free, tool]
+        badges: [opensource]
 
       - title: "Hoppscotch"
         url: "https://hoppscotch.io"
-        description: "Lightweight open-source API development tool. Postman alternative."
+        description: "Lightweight open-source API development software. Postman alternative."
         tags: [api, rest, graphql, testing]
-        badges: [opensource, free]
+        badges: [opensource]
 
       - title: "DevDocs"
         url: "https://devdocs.io"
         description: "Fast offline documentation browser for 100+ APIs."
         tags: [docs, reference, offline]
-        badges: [free, opensource]
+        badges: [opensource]
 
       - title: "Regex101"
         url: "https://regex101.com"
         description: "Build, test and debug regular expressions with real-time explanation."
         tags: [regex, tools, dev]
-        badges: [free, tool]
+        badges: [software]
 
       - title: "JSON Crack"
         url: "https://jsoncrack.com"
         description: "Visualize JSON data as a graph. Great for exploring complex structures."
         tags: [json, visualizer, dev]
-        badges: [opensource, free, tool]
+        badges: [opensource, software]
 
       - title: "Squoosh"
         url: "https://squoosh.app"
-        description: "Image compression tool by Google. Runs entirely in the browser."
+        description: "Image compression software by Google. Runs entirely in the browser."
         tags: [images, compression, tools]
-        badges: [opensource, free, tool]
+        badges: [opensource, software]
 
       - title: "Ray.so"
         url: "https://ray.so"
         description: "Create beautiful images of your code snippets."
         tags: [code, design, tools]
-        badges: [free, tool]
+        badges: [software]
 
       - title: "Transform Tools"
         url: "https://transform.tools"
         description: "Collection of code transformers — JSON to TypeScript, SVG to JSX and more."
         tags: [dev, tools, converter]
-        badges: [free, opensource, tool]
+        badges: [opensource, software]
 
       - title: "Bundlephobia"
         url: "https://bundlephobia.com"
         description: "Find the cost of adding a npm package to your bundle."
         tags: [npm, javascript, performance]
-        badges: [free, tool]
+        badges: [software]
 
       - title: "Crontab Guru"
         url: "https://crontab.guru"
         description: "The quick and simple cron schedule expression editor."
         tags: [cron, linux, tools]
-        badges: [free, tool]
+        badges: [software]
 
       - title: "Warp"
         url: "https://warp.dev"
         description: "The terminal reimagined with AI and team collaboration built in."
         tags: [terminal, ai, productivity]
-        badges: [tool, free]
+        badges: [software]
 
       - title: "Raycast"
         url: "https://raycast.com"
         description: "Blazingly fast macOS launcher. Replace Spotlight."
         tags: [macos, launcher, productivity]
-        badges: [tool, free]
+        badges: [software]
 
       - title: "Coolors"
         url: "https://coolors.co"
         description: "The fastest color palette generator. Press space, get palettes."
         tags: [color, design, tools]
-        badges: [tool, free]
+        badges: [software]
 
       - title: "Iconify"
         url: "https://iconify.design"
         description: "150,000+ icons from 150+ icon sets under one unified API."
         tags: [icons, design, ui]
-        badges: [opensource, free]
+        badges: [opensource]
 
       - title: "Ngrok"
         url: "https://ngrok.com"
         description: "Expose local servers to the internet instantly with a tunnel."
         tags: [networking, dev, tunneling]
-        badges: [tool, free]
+        badges: [software]
 
       - title: "Vercel"
         url: "https://vercel.com"
-        description: "Deploy frontend apps instantly. Very generous free tier."
+        description: "Deploy frontend apps instantly. Very generous  tier."
         tags: [hosting, deployment, frontend]
-        badges: [tool, free]
+        badges: [software]
 
       - title: "Netlify"
         url: "https://netlify.com"
         description: "Platform for deploying and hosting modern web projects."
         tags: [hosting, deployment, frontend]
-        badges: [tool, free]
+        badges: [software]
 
       - title: "CyberChef"
         url: "https://gchq.github.io/CyberChef"
         description: "The Cyber Swiss Army Knife — encode, decode, encrypt, analyse."
         tags: [security, tools, encryption]
-        badges: [opensource, free, tool]
+        badges: [opensource, software]
 
       - title: "Have I Been Pwned"
         url: "https://haveibeenpwned.com"
         description: "Check if your email or password has appeared in a data breach."
         tags: [security, privacy, tools]
-        badges: [free, tool]
+        badges: [software]
 
       - title: "Shodan"
         url: "https://shodan.io"
         description: "Search engine for internet-connected devices."
         tags: [security, networking, tools]
-        badges: [tool, free]
+        badges: [software]
 
   - name: "Docs & References"
     icon: ""
@@ -141,85 +135,85 @@ categories:
         url: "https://developer.mozilla.org"
         description: "The definitive reference for HTML, CSS and JavaScript."
         tags: [docs, web, reference]
-        badges: [free, verified]
+        badges: [docs]
 
       - title: "tldr-pages"
         url: "https://tldr.sh"
         description: "Simplified, community-maintained man pages with practical examples."
         tags: [cli, linux, reference]
-        badges: [community, opensource, free]
+        badges: [community, opensource]
 
       - title: "Roadmap.sh"
         url: "https://roadmap.sh"
         description: "Community-driven learning roadmaps for developers."
         tags: [learning, career, roadmap]
-        badges: [community, opensource, free]
+        badges: [community, opensource]
 
       - title: "The Missing Semester"
         url: "https://missing.csail.mit.edu"
         description: "MIT course on shell, git, vim — tools CS degrees forget to teach."
         tags: [shell, git, vim, learning]
-        badges: [free, verified]
+        badges: [docs]
 
       - title: "Learn Git Branching"
         url: "https://learngitbranching.js.org"
         description: "The most visual and interactive way to learn git."
         tags: [git, learning, interactive]
-        badges: [free, opensource]
+        badges: [opensource]
 
       - title: "Refactoring Guru"
         url: "https://refactoring.guru"
         description: "Design patterns and refactoring techniques explained clearly."
         tags: [patterns, architecture, learning]
-        badges: [free]
+        badges: []
 
       - title: "Big-O Cheat Sheet"
         url: "https://bigocheatsheet.com"
         description: "Time and space complexity reference for common data structures."
         tags: [algorithms, reference, cs]
-        badges: [free]
+        badges: []
 
       - title: "Devhints"
         url: "https://devhints.io"
         description: "A collection of cheatsheets for developers."
         tags: [cheatsheet, reference, dev]
-        badges: [free, opensource]
+        badges: [opensource]
 
       - title: "OverAPI"
         url: "https://overapi.com"
         description: "Cheat sheets for most programming languages in one place."
         tags: [cheatsheet, reference, dev]
-        badges: [free]
+        badges: []
 
       - title: "public-apis"
         url: "https://github.com/public-apis/public-apis"
-        description: "A collective list of free public APIs for use in projects."
+        description: "A collective list of  public APIs for use in projects."
         tags: [api, reference, github]
-        badges: [community, opensource, free]
+        badges: [community, opensource]
 
       - title: "CSS Tricks"
         url: "https://css-tricks.com"
         description: "Tips, tricks and techniques on using CSS."
         tags: [css, web, reference]
-        badges: [free]
+        badges: []
 
       - title: "Flexbox Froggy"
         url: "https://flexboxfroggy.com"
         description: "A game for learning CSS flexbox."
         tags: [css, learning, interactive]
-        badges: [free]
+        badges: []
 
       - title: "Grid Garden"
         url: "https://cssgridgarden.com"
         description: "A game for learning CSS grid layout."
         tags: [css, learning, interactive]
-        badges: [free]
+        badges: []
 
       - title: "the-book-of-secret-knowledge"
         url: "https://github.com/trimstray/the-book-of-secret-knowledge"
         description: "Inspiring lists, manuals, cheatsheets, blogs and tools for admins."
         tags: [reference, sysadmin, security, github]
-        badges: [community, opensource, free]
+        badges: [community, opensource]
 
   - name: "AI"
     icon: ""
@@ -228,25 +222,25 @@ categories:
         url: "https://claude.ai"
         description: "Anthropic's AI assistant. Excellent for coding and writing."
         tags: [ai, llm, assistant]
-        badges: [tool, free]
+        badges: [software]
 
       - title: "ChatGPT"
         url: "https://chat.openai.com"
         description: "OpenAI's flagship conversational AI."
         tags: [ai, llm, assistant]
-        badges: [tool, free]
+        badges: [software]
 
       - title: "Gemini"
         url: "https://gemini.google.com"
         description: "Google's multimodal AI assistant."
         tags: [ai, llm, assistant]
-        badges: [tool, free]
+        badges: [software]
 
       - title: "Perplexity"
         url: "https://perplexity.ai"
         description: "AI-powered search engine with cited sources."
         tags: [ai, search, research]
-        badges: [tool, free]
+        badges: [software]
 
       - title: "Hugging Face"
         url: "https://huggingface.co"
@@ -258,13 +252,13 @@ categories:
         url: "https://ollama.ai"
         description: "Run large language models locally. One command setup."
         tags: [llm, local, cli, selfhosted]
-        badges: [tool, opensource, free]
+        badges: [software, opensource]
 
       - title: "LM Studio"
         url: "https://lmstudio.ai"
         description: "Desktop app to run local LLMs with a clean GUI."
         tags: [llm, local, desktop]
-        badges: [tool, free]
+        badges: [software]
 
       - title: "LangChain"
         url: "https://python.langchain.com"
@@ -276,19 +270,19 @@ categories:
         url: "https://openrouter.ai"
         description: "Unified API for accessing dozens of LLMs from one endpoint."
         tags: [ai, llm, api]
-        badges: [tool, free]
+        badges: [software]
 
       - title: "Stable Diffusion Web UI"
         url: "https://github.com/AUTOMATIC1111/stable-diffusion-webui"
         description: "The most popular web UI for running Stable Diffusion locally."
         tags: [ai, image, stablediffusion, github]
-        badges: [opensource, free]
+        badges: [opensource]
 
       - title: "Civitai"
         url: "https://civitai.com"
         description: "Community hub for AI art models, LoRAs and resources."
         tags: [ai, image, models, community]
-        badges: [community, free]
+        badges: [community]
 
   - name: "GitHub Repos"
     icon: ""
@@ -297,55 +291,55 @@ categories:
         url: "https://github.com/dani-garcia/vaultwarden"
         description: "Self-hosted Bitwarden-compatible password server in Rust."
         tags: [selfhosted, security, passwords, github]
-        badges: [opensource, free]
+        badges: [opensource]
 
       - title: "Awesome Self-Hosted"
         url: "https://github.com/awesome-selfhosted/awesome-selfhosted"
         description: "Massive curated list of self-hostable services and software."
         tags: [selfhosted, awesome, community, github]
-        badges: [community, opensource, free]
+        badges: [community, opensource]
 
       - title: "Awesome Privacy"
         url: "https://github.com/pluja/awesome-privacy"
         description: "List of privacy-respecting alternatives to popular services."
         tags: [privacy, awesome, community, github]
-        badges: [community, opensource, free]
+        badges: [community, opensource]
 
       - title: "ohmyzsh"
         url: "https://github.com/ohmyzsh/ohmyzsh"
         description: "Community-driven framework for managing zsh configuration."
         tags: [shell, zsh, terminal, github]
-        badges: [community, opensource, free]
+        badges: [community, opensource]
 
       - title: "freeCodeCamp"
         url: "https://github.com/freeCodeCamp/freeCodeCamp"
         description: "Open source codebase and curriculum for learning to code."
         tags: [learning, javascript, github]
-        badges: [opensource, free, community]
+        badges: [opensource, community]
 
       - title: "ESP32Marauder"
         url: "https://github.com/justcallmekoko/ESP32Marauder"
         description: "WiFi and Bluetooth offensive and defensive tools for ESP32."
         tags: [esp32, security, hardware, github]
-        badges: [opensource, free]
+        badges: [opensource]
 
       - title: "Polaris"
         url: "https://github.com/agersant/polaris"
         description: "Self-hosted music streaming server."
         tags: [selfhosted, music, streaming, github]
-        badges: [opensource, free]
+        badges: [opensource]
 
       - title: "Uptime Kuma"
         url: "https://github.com/louislam/uptime-kuma"
-        description: "Self-hosted monitoring tool with a beautiful dashboard."
+        description: "Self-hosted monitoring software with a beautiful dashboard."
         tags: [monitoring, selfhosted, github]
-        badges: [opensource, free, tool]
+        badges: [opensource, software]
 
       - title: "Dashdot"
         url: "https://github.com/MauriceNino/dashdot"
         description: "Minimal, sleek server dashboard for your homelab."
         tags: [homelab, dashboard, selfhosted, github]
-        badges: [opensource, free]
+        badges: [opensource]
 
       - title: "mini-rack"
         url: "https://github.com/geerlingguy/mini-rack"
@@ -357,13 +351,13 @@ categories:
         url: "https://github.com/hydralauncher/hydra"
         description: "Game launcher with built-in torrent client."
         tags: [gaming, launcher, github]
-        badges: [opensource, free]
+        badges: [opensource]
 
       - title: "Timeshift"
         url: "https://github.com/linuxmint/timeshift"
-        description: "System restore tool for Linux. Like Time Machine but for Linux."
+        description: "System restore software for Linux. Like Time Machine but for Linux."
         tags: [linux, backup, tools, github]
-        badges: [opensource, free, tool]
+        badges: [opensource, software]
 
   - name: "Self-Hosting"
     icon: ""
@@ -372,67 +366,67 @@ categories:
         url: "https://selfh.st/apps"
         description: "Curated directory of self-hostable applications."
         tags: [selfhosted, homelab, reference]
-        badges: [community, free]
+        badges: [community]
 
       - title: "Portainer"
         url: "https://portainer.io"
         description: "Container management UI for Docker and Kubernetes."
         tags: [docker, containers, homelab]
-        badges: [tool, free, opensource]
+        badges: [software, opensource]
 
       - title: "Traefik"
         url: "https://traefik.io"
         description: "Cloud-native reverse proxy with automatic SSL. Docker-native."
         tags: [networking, proxy, docker]
-        badges: [opensource, free, tool]
+        badges: [opensource, software]
 
       - title: "Nginx Proxy Manager"
         url: "https://nginxproxymanager.com"
         description: "Easy reverse proxy management with a clean web UI."
         tags: [nginx, proxy, homelab]
-        badges: [opensource, free, tool]
+        badges: [opensource, software]
 
       - title: "Nextcloud"
         url: "https://nextcloud.com"
         description: "Self-hosted Google Drive alternative. Files, calendar, contacts."
         tags: [selfhosted, storage, productivity]
-        badges: [opensource, free]
+        badges: [opensource]
 
       - title: "Immich"
         url: "https://immich.app"
         description: "Self-hosted Google Photos alternative. Fast and beautiful."
         tags: [selfhosted, photos, storage]
-        badges: [opensource, free]
+        badges: [opensource]
 
       - title: "Jellyfin"
         url: "https://jellyfin.org"
         description: "Free and open source media server. Self-hosted Plex alternative."
         tags: [selfhosted, media, streaming]
-        badges: [opensource, free]
+        badges: [opensource]
 
       - title: "Home Assistant"
         url: "https://home-assistant.io"
         description: "Open source home automation. Local first, privacy focused."
         tags: [homeautomation, iot, selfhosted]
-        badges: [opensource, free, community]
+        badges: [opensource, community]
 
       - title: "CasaOS"
         url: "https://casaos.io"
         description: "Simple personal cloud OS. Great for NAS and homelab beginners."
         tags: [selfhosted, homelab, dashboard]
-        badges: [opensource, free]
+        badges: [opensource]
 
       - title: "Proxmox"
         url: "https://proxmox.com"
         description: "Open-source virtualisation platform for VMs and containers."
         tags: [virtualisation, homelab, linux]
-        badges: [opensource, free]
+        badges: [opensource]
 
       - title: "Pterodactyl"
         url: "https://pterodactyl.io"
         description: "Open source game server management panel."
         tags: [selfhosted, gaming, servers]
-        badges: [opensource, free]
+        badges: [opensource]
 
   - name: "Privacy & Security"
     icon: ""
@@ -441,37 +435,37 @@ categories:
         url: "https://privacyguides.org"
         description: "Community-curated guide to privacy tools and practices."
         tags: [privacy, security, reference]
-        badges: [community, opensource, free]
+        badges: [community, opensource]
 
       - title: "DuckDuckGo"
         url: "https://duckduckgo.com"
         description: "Privacy-first search engine. No tracking, no filter bubbles."
         tags: [privacy, search]
-        badges: [tool, free]
+        badges: [software]
 
       - title: "Bitwarden"
         url: "https://bitwarden.com"
         description: "Open source password manager. Cloud or self-hosted."
         tags: [passwords, security, privacy]
-        badges: [opensource, free]
+        badges: [opensource]
 
       - title: "ProtonMail"
         url: "https://proton.me"
         description: "End-to-end encrypted email, VPN and cloud storage."
         tags: [email, privacy, encryption]
-        badges: [free]
+        badges: []
 
       - title: "Njalla"
         url: "https://njal.la"
         description: "Privacy-focused domain registration. Minimal data collected."
         tags: [privacy, domains]
-        badges: [tool, paid]
+        badges: [software, paid]
 
       - title: "Mullvad VPN"
         url: "https://mullvad.net"
         description: "Privacy-first VPN. Anonymous accounts, accepts cash and crypto."
         tags: [vpn, privacy, security]
-        badges: [tool, paid]
+        badges: [software, paid]
 
   - name: "News & Communities"
     icon: ""
@@ -480,49 +474,49 @@ categories:
         url: "https://news.ycombinator.com"
         description: "Tech and startup news aggregator by Y Combinator."
         tags: [news, tech, community]
-        badges: [free]
+        badges: []
 
       - title: "Lobsters"
         url: "https://lobste.rs"
         description: "Computing-focused community link aggregator."
         tags: [news, tech, community]
-        badges: [opensource, free]
+        badges: [opensource]
 
       - title: "Dev.to"
         url: "https://dev.to"
         description: "Community of developers sharing ideas and helping each other."
         tags: [community, dev, writing]
-        badges: [free, community]
+        badges: [community]
 
       - title: "r/selfhosted"
         url: "https://reddit.com/r/selfhosted"
         description: "Reddit community for self-hosting enthusiasts."
         tags: [selfhosted, community, reddit]
-        badges: [free, community]
+        badges: [community]
 
       - title: "r/homelab"
         url: "https://reddit.com/r/homelab"
         description: "Reddit community for homelab builders and enthusiasts."
         tags: [homelab, community, reddit]
-        badges: [free, community]
+        badges: [community]
 
       - title: "r/unixporn"
         url: "https://reddit.com/r/unixporn"
         description: "Show off your Linux and BSD desktop rices."
         tags: [linux, design, community, reddit]
-        badges: [free, community]
+        badges: [community]
 
       - title: "r/netsec"
         url: "https://reddit.com/r/netsec"
         description: "Technical information security news and discussion."
         tags: [security, news, community, reddit]
-        badges: [free, community]
+        badges: [community]
 
       - title: "r/linux"
         url: "https://reddit.com/r/linux"
         description: "News, guides and discussion about the Linux ecosystem."
         tags: [linux, news, community, reddit]
-        badges: [free, community]
+        badges: [community]
 
   - name: "Linux"
     icon: ""
@@ -531,37 +525,37 @@ categories:
         url: "https://ubuntu.com"
         description: "The most popular Linux distro for desktops and servers."
         tags: [linux, distro, ubuntu]
-        badges: [opensource, free]
+        badges: [opensource]
 
       - title: "Debian"
         url: "https://debian.org"
         description: "Rock-solid Linux distribution. The base for Ubuntu and many others."
         tags: [linux, distro, debian]
-        badges: [opensource, free]
+        badges: [opensource]
 
       - title: "Arch Linux"
         url: "https://archlinux.org"
         description: "Lightweight, flexible distro. For those who want full control."
         tags: [linux, distro, arch]
-        badges: [opensource, free]
+        badges: [opensource]
 
       - title: "ArchWiki"
         url: "https://wiki.archlinux.org"
         description: "The most comprehensive Linux wiki on the internet. Useful for any distro."
         tags: [linux, docs, reference, arch]
-        badges: [community, free]
+        badges: [community]
 
       - title: "NixOS"
         url: "https://nixos.org"
         description: "Declarative Linux distro. Reproducible, rollbackable, reliable."
         tags: [linux, distro, nix]
-        badges: [opensource, free]
+        badges: [opensource]
 
       - title: "Ventoy"
         url: "https://ventoy.net"
         description: "Create bootable USB drives with multiple ISOs. No reformatting."
         tags: [linux, tools, usb]
-        badges: [opensource, free, tool]
+        badges: [opensource, software]
 
   - name: "Gaming"
     icon: ""
@@ -570,40 +564,40 @@ categories:
         url: "https://store.steampowered.com"
         description: "The largest PC gaming platform."
         tags: [gaming, platform, steam]
-        badges: [tool, free]
+        badges: [software]
 
       - title: "SteamDB"
         url: "https://steamdb.info"
         description: "Database of everything on Steam. Prices, history, stats."
         tags: [gaming, tools, steam]
-        badges: [free, tool]
+        badges: [software]
 
       - title: "Modrinth"
         url: "https://modrinth.com"
         description: "Open source Minecraft mod platform. Modern CurseForge alternative."
         tags: [minecraft, mods, gaming]
-        badges: [opensource, free]
+        badges: [opensource]
 
       - title: "IsThereAnyDeal"
         url: "https://isthereanydeal.com"
         description: "Game price tracker and deal aggregator across all stores."
         tags: [gaming, deals, tools]
-        badges: [free, tool]
+        badges: [software]
 
       - title: "PCGamingWiki"
         url: "https://pcgamingwiki.com"
         description: "Community wiki with fixes, tweaks and info for PC games."
         tags: [gaming, wiki, community]
-        badges: [community, free]
+        badges: [community]
 
       - title: "Lutris"
         url: "https://lutris.net"
         description: "Open gaming platform for Linux. Run any game on Linux easily."
         tags: [gaming, linux, tools]
-        badges: [opensource, free, tool]
+        badges: [opensource, software]
 
       - title: "ProtonDB"
         url: "https://protondb.com"
         description: "Community reports on Steam games running on Linux via Proton."
         tags: [gaming, linux, community, steam]
-        badges: [community, free]
+        badges: [community]
