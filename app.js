@@ -75,8 +75,8 @@ function slugify(s) {
 }
 
 let activeBadge = 'all';
-const BADGE_LIST = ['community', 'opensource', 'verified', 'free', 'paid', 'tool'];
-const BADGE_DISPLAY = { community:'community', opensource:'open-source', verified:'verified', free:'free', paid:'paid', tool:'tool' };
+const BADGE_LIST = ['community', 'opensource', 'software', 'docs', 'resource'];
+const BADGE_DISPLAY = { community:'community', opensource:'open-source', software:'software', docs:'docs', resource:'resource' };
 
 function buildSidebar(items) {
   // Tags
@@ -138,10 +138,10 @@ function favicon(url) {
 const BADGE_LABELS = {
   community: 'community',
   opensource: 'open-source',
-  verified: 'verified',
-  free: 'free',
-  paid: 'paid',
-  tool: 'tool'
+  docs: 'docs',
+  resource: 'resource',
+
+  software: 'software'
 };
 
 function badgeHTML(b) {
