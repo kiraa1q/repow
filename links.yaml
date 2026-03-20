@@ -14,6 +14,12 @@ categories:
         tags: [design, diagrams, whiteboard]
         badges: [opensource, free]
 
+        title: "Lichess"
+        url: "https://lichess.org/analysis#0"
+        description: "Chess Web-engine"
+        tags: [chess]
+        badges: [free, tool]
+
       - title: "Hoppscotch"
         url: "https://hoppscotch.io"
         description: "Lightweight open-source API development tool. Postman alternative."
